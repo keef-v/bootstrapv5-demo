@@ -1,15 +1,59 @@
+//https://v5.getbootstrap.com/docs/5.0/customize/optimize/
+//demo site https://visithumboldt.com/
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
-// Required
+// Configuration
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
 @import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
 
-// Optional
+
+// Layout & components
+@import "../node_modules/bootstrap/scss/root";
 @import "../node_modules/bootstrap/scss/reboot";
 @import "../node_modules/bootstrap/scss/type";
-@import "../node_modules/bootstrap/scss/images";
+
+@import "../node_modules/bootstrap/scss/containers";
 @import "../node_modules/bootstrap/scss/grid";
-@import "../node_modules/bootstrap/scss/forms";
 @import "../node_modules/bootstrap/scss/tables";
+@import "../node_modules/bootstrap/scss/forms";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/transitions";
+@import "../node_modules/bootstrap/scss/dropdown";
+
+
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+
+@import "../node_modules/bootstrap/scss/popover";
+
+@import "../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+.navbar {
+    width: 100%;
+    height:300px;
+    clip-path: ellipse(100% 93% at 47% 0%);
+    background: linear-gradient(90deg, rgba(0,65,255,0.4741246840533089) 0%, rgba(19,189,229,0.08196782130821079) 61%),url('../pic1.jpg');
+    background-size: cover;
+    background-position: center center;
+}
+
+body {
+    background-image: url('../pic1.jpg');;
+}
+
+.bgw {
+    background-color:rgba(white,0.5);
+}
+.bgb {
+    background-color: black;
+}
+
+bgblue {
+    background-color: blue;
+}
