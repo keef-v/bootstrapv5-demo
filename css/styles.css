@@ -5887,3 +5887,7 @@ main {
 @media (min-width: 1200px) {
   .display-3 {
     margin-top: 0.5em; } }
+
+.navbar {
+  display: flex;
+  align-items: flex-start; }
