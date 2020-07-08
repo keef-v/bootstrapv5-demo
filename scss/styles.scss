@@ -1,4 +1,5 @@
 //https://v5.getbootstrap.com/docs/5.0/customize/optimize/
+//https://fontawesome.com/v4.7.0/icons/  --- check font codes
 //demo site https://visithumboldt.com/
 // Custom.scss
 // Option B: Include parts of Bootstrap
@@ -54,6 +55,82 @@ body {
     background-color: black;
 }
 
-bgblue {
+.bgblue {
     background-color: blue;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+
+$font: 'Lato', sans-serif;
+
+$white: #ffffff;
+$black: #000000;
+$orange: #b1b901;
+$blue: #81CCE8;
+
+$ease: all .3s ease;
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+//   height: 1vh;
+padding-top:2em;
+}
+label {display: block;}
+
+input[type=search] {
+  box-shadow: 10px 10px 4px rgba($black, .4);
+  background: $white;
+  border: 2px solid $orange;
+  outline: none;
+  width: 70%;
+  height: 50px;
+  border-radius: 15px 0 0 15px;
+  font-size: 1.4em;
+  font-weight: 300;
+  padding: 0px 10px;
+  font-family: $font;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $orange;
+}
+
+.search-btn {
+  box-shadow: 10px 10px 4px rgba($black, 0.4);
+  height: 50px;
+  width: 55px;
+  outline: none;
+  border-radius: 0 15px 15px 0;
+  background: $orange;
+  color: $white;
+  border: none;
+  transition: $ease;
+  &:hover {
+    transition: $ease;
+    i {
+      font-size: 2.5em;
+    }
+  }
+  i {
+    font-size: 2.3em;
+  }
+}
+
+
+::placeholder {
+  color: $blue;
+  font-size: .8em;
+}
+
+
+main {
+    margin:0 20%;
+    background-color: rgba($orange,0.7);
+}
+
+@media (min-width: 1200px) {
+.display-3 {
+    margin-top: 0.5em;
+}
 }
