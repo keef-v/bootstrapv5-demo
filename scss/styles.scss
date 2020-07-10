@@ -4,6 +4,8 @@
 // Custom.scss
 // Option B: Include parts of Bootstrap
 
+
+
 // Configuration
 @import "../node_modules/bootstrap/scss/functions";
 @import "../node_modules/bootstrap/scss/variables";
@@ -35,14 +37,20 @@
 // scss-docs-end import-stack
 
 
-// .navbar {
-//     width: 100%;
-//     height:300px;
+.navbar {
+    width: 100%;
+    height:300px;
 //     clip-path: ellipse(100% 93% at 47% 0%);
 //     background: linear-gradient(90deg, rgba(0,65,255,0.4741246840533089) 0%, rgba(19,189,229,0.08196782130821079) 61%),url('../pic1.jpg');
 //     background-size: cover;
 //     background-position: center center;
-// }
+clip-path: ellipse(81% 86% at 53% 13%);
+       background: linear-gradient(90deg, rgba($primary,0.6449930313922444) 0%, rgba($blue-900,0.24163168685442926) 49%), url(../pic1.jpg);
+           
+       background-position: center center;
+       background-size:cover;
+       
+ }
 
 // body {
 //     background-image: url('../pic1.jpg');;
@@ -59,7 +67,7 @@
 //     background-color: blue;
 // }
 
-// @import url('https://fonts.googleapis.com/css?family=Lato:300,700');
+ @import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 
 // $font: 'Lato', sans-serif;
 
