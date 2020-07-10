@@ -69,40 +69,39 @@ clip-path: ellipse(81% 86% at 53% 13%);
 
  @import url('https://fonts.googleapis.com/css?family=Lato:300,700');
 
-// $font: 'Lato', sans-serif;
+ $font: 'Lato', sans-serif;
 
 // $white: #ffffff;
 // $black: #000000;
-// $orange: #b1b901;
+ // $third-color: #b1b901;
 // $blue: #81CCE8;
 
 // $ease: all .3s ease;
 
-// .search-box {
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-// //   height: 1vh;
-// padding-top:2em;
-// }
+ .search-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-top:2em;
+   }
 // label {display: block;}
 
-// input[type=search] {
+input[type=search] {
 //   box-shadow: 10px 10px 4px rgba($black, .4);
-//   background: $white;
-//   border: 2px solid $orange;
-//   outline: none;
-//   width: 70%;
-//   height: 50px;
-//   border-radius: 15px 0 0 15px;
-//   font-size: 1.4em;
-//   font-weight: 300;
-//   padding: 0px 10px;
-//   font-family: $font;
-//   letter-spacing: 2px;
-//   text-transform: uppercase;
-//   color: $orange;
-// }
+     background: $white;
+     border: 2px solid $third-color;
+     outline: none;
+     width: 70%;
+   height: 50px;
+   border-radius: 15px 0 0 15px;
+   font-size: 1.4em;
+   font-weight: 300;
+  padding: 0px 10px;
+   letter-spacing: 2px;
+   text-transform: uppercase;
+   color: $third-color;
+
+}
 
 // .search-btn {
 //   box-shadow: 10px 10px 4px rgba($black, 0.4);
