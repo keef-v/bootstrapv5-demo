@@ -23,3 +23,14 @@
 // Utilities
 @import "../node_modules/bootstrap/scss/utilities/api";
 // scss-docs-end import-stack
+
+
+// Custom styling
+
+.navbar {
+    height: 300px;
+    background-image: url(../outdoors.jpg);
+    background-position: center center;
+    background-size: cover;
+
+} 
