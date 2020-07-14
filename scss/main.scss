@@ -1,0 +1,42 @@
+// scss-docs-start import-stack
+// Configuration
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+@import "../node_modules/bootstrap/scss/utilities";
+
+// Layout & components
+@import "../node_modules/bootstrap/scss/root";
+@import "../node_modules/bootstrap/scss/reboot";
+@import "../node_modules/bootstrap/scss/type";
+@import "../node_modules/bootstrap/scss/containers";
+@import "../node_modules/bootstrap/scss/grid";
+@import "../node_modules/bootstrap/scss/buttons";
+@import "../node_modules/bootstrap/scss/nav";
+@import "../node_modules/bootstrap/scss/navbar";
+@import "../node_modules/bootstrap/scss/card";
+@import "../node_modules/bootstrap/scss/forms";
+
+
+// Utilities
+@import "../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+
+.navbar {
+    height:300px;
+    background-image: url(../pic2.jpg);
+
+    clip-path: ellipse(89% 98% at 50% 0%);
+    background: rgb(9,9,121);
+background: linear-gradient(90deg, rgba($primary,0.8130602582830007) 0%, rgba($cyan,0.29485297536983546) 38%),url(../pic2.jpg);
+background: linear-gradient(90deg, rgba(9,9,121,0.8130602582830007) 0%, rgba(168,194,236,0) 33%) ,url(../pic2.jpg) ;
+background-position: center center;
+    background-size: cover;
+
+}
+
+body {
+    background-image: url(../pic2.jpg);
+}
