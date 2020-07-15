@@ -21,6 +21,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #343a40;
+  --bs-secondary-op: rgba(177, 185, 1, 0.3);
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0)); }
@@ -457,15 +458,15 @@ progress {
 
 @media (min-width: 992px) {
   .container, .container-sm, .container-md, .container-lg {
-    max-width: 960px; } }
+    max-width: 800px; } }
 
 @media (min-width: 1200px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl {
-    max-width: 1140px; } }
+    max-width: 800px; } }
 
 @media (min-width: 1400px) {
   .container, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
-    max-width: 1320px; } }
+    max-width: 800px; } }
 
 .row {
   --bs-gutter-x: 1.5rem;
@@ -2139,6 +2140,34 @@ progress {
     background-color: #343a40;
     border-color: #343a40; }
 
+.btn-secondary-op {
+  color: #212529;
+  background-color: rgba(177, 185, 1, 0.3);
+  border-color: rgba(177, 185, 1, 0.3); }
+  .btn-secondary-op:hover {
+    color: #fff;
+    background-color: rgba(141, 147, 1, 0.3);
+    border-color: rgba(128, 134, 1, 0.3); }
+  .btn-check:focus + .btn-secondary-op, .btn-secondary-op:focus {
+    color: #fff;
+    background-color: rgba(141, 147, 1, 0.3);
+    border-color: rgba(128, 134, 1, 0.3);
+    box-shadow: 0 0 0 0.2rem rgba(105, 111, 21, 0.5); }
+  .btn-check:checked + .btn-secondary-op,
+  .btn-check:active + .btn-secondary-op, .btn-secondary-op:active, .btn-secondary-op.active,
+  .show > .btn-secondary-op.dropdown-toggle {
+    color: #fff;
+    background-color: rgba(128, 134, 1, 0.3);
+    border-color: rgba(116, 122, 1, 0.3); }
+    .btn-check:checked + .btn-secondary-op:focus,
+    .btn-check:active + .btn-secondary-op:focus, .btn-secondary-op:active:focus, .btn-secondary-op.active:focus,
+    .show > .btn-secondary-op.dropdown-toggle:focus {
+      box-shadow: 0 0 0 0.2rem rgba(105, 111, 21, 0.5); }
+  .btn-secondary-op:disabled, .btn-secondary-op.disabled {
+    color: #212529;
+    background-color: rgba(177, 185, 1, 0.3);
+    border-color: rgba(177, 185, 1, 0.3); }
+
 .btn-outline-primary {
   color: #0d6efd;
   border-color: #0d6efd; }
@@ -2305,6 +2334,27 @@ progress {
       box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5); }
   .btn-outline-dark:disabled, .btn-outline-dark.disabled {
     color: #343a40;
+    background-color: transparent; }
+
+.btn-outline-secondary-op {
+  color: rgba(177, 185, 1, 0.3);
+  border-color: rgba(177, 185, 1, 0.3); }
+  .btn-outline-secondary-op:hover {
+    color: #212529;
+    background-color: rgba(177, 185, 1, 0.3);
+    border-color: rgba(177, 185, 1, 0.3); }
+  .btn-check:focus + .btn-outline-secondary-op, .btn-outline-secondary-op:focus {
+    box-shadow: 0 0 0 0.2rem rgba(177, 185, 1, 0.5); }
+  .btn-check:checked + .btn-outline-secondary-op,
+  .btn-check:active + .btn-outline-secondary-op, .btn-outline-secondary-op:active, .btn-outline-secondary-op.active, .btn-outline-secondary-op.dropdown-toggle.show {
+    color: #212529;
+    background-color: rgba(177, 185, 1, 0.3);
+    border-color: rgba(177, 185, 1, 0.3); }
+    .btn-check:checked + .btn-outline-secondary-op:focus,
+    .btn-check:active + .btn-outline-secondary-op:focus, .btn-outline-secondary-op:active:focus, .btn-outline-secondary-op.active:focus, .btn-outline-secondary-op.dropdown-toggle.show:focus {
+      box-shadow: 0 0 0 0.2rem rgba(177, 185, 1, 0.5); }
+  .btn-outline-secondary-op:disabled, .btn-outline-secondary-op.disabled {
+    color: rgba(177, 185, 1, 0.3);
     background-color: transparent; }
 
 .btn-link {
@@ -3030,6 +3080,9 @@ progress {
 .border-dark {
   border-color: #343a40 !important; }
 
+.border-secondary-op {
+  border-color: rgba(177, 185, 1, 0.3) !important; }
+
 .border-white {
   border-color: #fff !important; }
 
@@ -3566,6 +3619,9 @@ progress {
 .text-dark {
   color: #343a40 !important; }
 
+.text-secondary-op {
+  color: rgba(177, 185, 1, 0.3) !important; }
+
 .text-white {
   color: #fff !important; }
 
@@ -3619,6 +3675,9 @@ progress {
 
 .bg-dark {
   background-color: #343a40 !important; }
+
+.bg-secondary-op {
+  background-color: rgba(177, 185, 1, 0.3) !important; }
 
 .bg-body {
   background-color: #fff !important; }
@@ -5371,3 +5430,6 @@ progress {
   background: linear-gradient(90deg, rgba(13, 110, 253, 0.474125) 0%, rgba(177, 185, 1, 0.353677) 21%), url(../outdoors.jpg);
   background-position: center center;
   background-size: cover; }
+
+body {
+  background-image: url(../outdoors.jpg); }

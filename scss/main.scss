@@ -33,8 +33,7 @@
     background: linear-gradient(90deg, rgba($primary,0.4741246840533089) 0%, rgba($secondary,0.3536765047816002) 21%), url(../outdoors.jpg);
     background-position: center center;
     background-size: cover;
-
-
-
-
 } 
+body {
+    background-image: url(../outdoors.jpg);
+}
